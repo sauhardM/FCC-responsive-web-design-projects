@@ -1,79 +1,83 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #EEEEEE;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(SvWWN.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#title{
+#header {
+    color: white;
     text-align: center;
+}
+
+#header p {
+    font-family: poppins;
     font-size: large;
 }
 
-#img-div{
-    background-color: white;
-    text-align: center;
-    border-color: white;
-    padding: 10px;
-}
-
-#image{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-
-}
-
-#tribute-info{
-    margin-top: 4%;
-    
-    
-}
-
-#info-heading{
-    text-align: center;
+#main {
+    font-family: poppins;
+    color: white;
     font-weight: bolder;
     font-size: large;
-
-}
-
-#info-list{
-    margin-top: 3%;
-    margin-left: 30%;
-}
-
-ul li{
-    font-family: 'Times New Roman', Times, serif;
-    width: 58%;
-    font-size: 90%;
-
-    /* border: 1px solid black;  */
-    margin-top: 2%;
-    text-align:justify;
-}
-span{
-    
-    font-weight: 10;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#footer {
-     margin: auto;
-     text-align: justify;
-     width: 33%;
-     /* border: 1px solid black; */
-     padding: 2%;
-     font-size: 1.15rem;
-
-}
-
-#end{
-    font-weight: bolder;
-    text-align: center;
     padding: 2%;
-    font-size: 1.3rem;
+    border-radius: 2.5%;
+    background-color: #2A2948;
+    opacity: 0.85;
+    margin-top: 2%;
+    margin-left: 30%;
+    width: 40%;
+    /* border: 1px solid red; */
 }
 
-#end a{
-    color: #597DA7;
+.input-form {
+    font-family: sans-serif;
+    /* font-weight: bolder; */
+    font-size: medium;
+    color: black;
+    margin-bottom: 3%;
+    display: block;
+    width: 90%;
+    padding: 1.5%;
+    border-radius: 5px;
+
+}
+
+.input-radio {
+    display: inline;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+
+}
+
+.block {
+    display: block;
+}
+
+.input-checkbox {
+    display: inline;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p{
+    margin-bottom: 0;
+    padding: 0;
 }

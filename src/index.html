@@ -1,55 +1,98 @@
-<!-- This one is the first FCC challenge other challenge solutions are present in multiple branches -->
-<!-- I have created mutliple branches for diffrent challenges visit them all to go through them. -->
+<!-- Submit form challenge -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
+
 <body>
-    <div id="main">
-        <div id="title">
-        <h1>Dr. Norman Borlaug</h1>
-        <p>The man who saved a billion lives</p>
-        </div>
-        <div id="img-div">
-            <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="">
-            <p id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.
+    <div id="wrapper">
+        <div id="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">
+                Thank you for taking the time to help us improve the platform
             </p>
         </div>
-        <div id="tribute-info">
-            <h3 id="info-heading">Here's a time line of Dr. Borlaug's life:<h3> 
-            <ul id="info-list">
-               <li>1914<span> - Born in Cresco, Iowa</span></li>
-               <li>1933<span> - Leaves his family's farm to attend the University of Minnesota, thanks</span>
-               <span>to a Depression era program known as the "National Youth Administration"</span></li>
-               <li>1935<span> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</span></li>
-               <li>1937<span> - Finishes university and takes a job in the US Forestry Service</span></li>
-               <li>1938<span> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</span></li>
-               <li>1941<span> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</span></li>
-               <li>1942<span> - Receives a Ph.D. in Genetics and Plant Pathology</span></li>
-               <li>1944<span> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</span></li>
-               <li>1945<span> - Discovers a way to grown wheat twice each season, doubling wheat yields</span></li>
-               <li>1953<span> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</span></li>
-               <li>1962<span> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</span></li>
-               <li>1970<span> - receives the Nobel Peace Prize</span></li>
-               <li>1983<span> - helps seven African countries dramatically increase their maize and sorghum yields</span></li>
-               <li>1984<span> - becomes a distinguished professor at Texas A&M University</span></li>
-               <li>2005<span> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</span></li>
-               <li>2009<span> - dies at the age of 95.</span></li>
-            </ul>
-        </div>
-        <div id="footer">
-            <p><i>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect,persistence and scientific vision can make to human peace and progress."</i></p>
-            <p><i>-- Indian Prime Minister Manmohan Singh</i></p>
-        </div>
-        
-        <p id="end">If you have time, you should read more about this incredible human being on his <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Norman_Borlaug"> Wikipedia entry</a>.</p>
+        <div id="main">
+            <form id="survey-form" action="">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" required class="input-form" type="text" placeholder="Enter your name" />
+                <label id="email-label" for="email">Email</label>
+                <input id="email" required class="input-form" type="email" placeholder="Enter your Email" />
+                <label id="number-label" for="age">Age<span>(optional)</span></label>
+                <input id="number" required class="input-form" min="10" max="99" type="number" placeholder="Age" />
+                <label id="dropdown" for="role">Which option best describes your current role?</label>
+                <select id="dropdown" class="input-form" name="">
+                    <option value="Select current role" disabled selected>
+                        Select current role
+                    </option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+                <p>
+                    <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
+                </p>
+                <label class="block" for=""><input class="input-radio" name="recommend" value="Definitely"
+                        type="radio" />Definitely</label>
+                <label class="block" for=""><input class="input-radio" name="recommend" value="Maybe"
+                        type="radio" />Maybe</label>
+                <label class="block" for=""><input class="input-radio" name="recommend" value="Not sure"
+                        type="radio" />Not sure</label>
 
+                <p>
+                    <label style="margin-top: 3%" for="">What is your favorite feature of freeCodeCamp?</label>
+                </p>
+                <select id="dropdown" class="input-form" name="">
+                    <option value="Select current role" disabled selected>
+                        Select current role
+                    </option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Front-end Projects" />Front-end Projects</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Back-end Projects" />Back-end Projects</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Data Visualization" />Data Visualization</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Challenges" />Challenges</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Open Source Community" />Open Source Community</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Gitter help rooms" />Gitter help rooms</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Videos" />Videos</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox" value="City Meetups" />City
+                    Meetups</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox" value="Wiki" />Wiki</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox" value="Forum" />Forum</label>
+                <label class="block" for=""><input type="checkbox" class="input-checkbox"
+                        value="Additional Courses" />Additional Courses</label>
+
+                <p>Any comments or suggestions?</p>
+                <textarea style="font-family: sans-serif; padding: 3%" name="" id="" cols="80" rows="7"
+                    placeholder="Enter your comment here..."></textarea>
+
+                <button id="submit" style="width: 98%; padding: 2%; background-color: #37af65" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>

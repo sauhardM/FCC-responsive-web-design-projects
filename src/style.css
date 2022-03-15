@@ -1,79 +1,225 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #EEEEEE;
+
+
 }
 
-#title{
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+
+}
+
+#logo {
+    width: 60vw;
+
+}
+
+#header-img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: large;
+    margin-left: 20px;
+
 }
 
-#img-div{
-    background-color: white;
-    text-align: center;
-    border-color: white;
-    padding: 10px;
+#nav-bar {
+    font-weight: 400;
 }
 
-#image{
-    max-width: 100%;
-    height: auto;
-    display: block;
+nav>ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+
+.nav-link {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
-
 }
 
-#tribute-info{
-    margin-top: 4%;
-    
-    
-}
-
-#info-heading{
+form {
+    /* border: 1px solid red; */
     text-align: center;
-    font-weight: bolder;
+}
+
+form input {
+    padding: 0.3%;
+    width: 16%;
+}
+
+form button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: large;
-
-}
-
-#info-list{
-    margin-top: 3%;
-    margin-left: 30%;
-}
-
-ul li{
-    font-family: 'Times New Roman', Times, serif;
-    width: 58%;
-    font-size: 90%;
-
-    /* border: 1px solid black;  */
-    margin-top: 2%;
-    text-align:justify;
-}
-span{
-    
-    font-weight: 10;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#footer {
-     margin: auto;
-     text-align: justify;
-     width: 33%;
-     /* border: 1px solid black; */
-     padding: 2%;
-     font-size: 1.15rem;
-
-}
-
-#end{
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    padding: 0.5%;
     text-align: center;
-    padding: 2%;
-    font-size: 1.3rem;
+    background-color: #F1C40F;
+    width: 12%;
+    border: none;
 }
 
-#end a{
-    color: #597DA7;
+button:hover {
+    cursor: pointer;
+}
+
+/* @media (max-width: 1000px) {
+
+    
+
+} */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#hero>h2 {
+    margin-bottom: 20px;
+    /* word-wrap: break-word; */
+}
+
+#hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+#features {
+
+    margin-top: 30px;
+}
+
+.grid {
+    display: flex;
+    ;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+#features .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+#how-it-works {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works>iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > h2 {
+    margin-top: 15px;
+}
+
+.product > ol {
+    margin: 15px 0;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
 }

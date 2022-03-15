@@ -1,98 +1,107 @@
-<!-- Submit form challenge -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd8d100e68.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
-
 <body>
-    <div id="wrapper">
+    <id id="wrapper">
         <div id="header">
-            <h1 id="title">freeCodeCamp Survey Form</h1>
-            <p id="description">
-                Thank you for taking the time to help us improve the platform
-            </p>
+            <div id="logo">
+               <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" alt="">
+            </div>
+            <nav id="nav-bar" >
+               <ul>
+                   <li><a class="nav-link"  href="#features">Features</a></li>
+                   <li><a class="nav-link"  href="#video">How It Works</a></li>
+                   <li><a class="nav-link"  href="#pricing">Pricing</a></li>
+               </ul>
+            </nav>
         </div>
-        <div id="main">
-            <form id="survey-form" action="">
-                <label id="name-label" for="name">Name</label>
-                <input id="name" required class="input-form" type="text" placeholder="Enter your name" />
-                <label id="email-label" for="email">Email</label>
-                <input id="email" required class="input-form" type="email" placeholder="Enter your Email" />
-                <label id="number-label" for="age">Age<span>(optional)</span></label>
-                <input id="number" required class="input-form" min="10" max="99" type="number" placeholder="Age" />
-                <label id="dropdown" for="role">Which option best describes your current role?</label>
-                <select id="dropdown" class="input-form" name="">
-                    <option value="Select current role" disabled selected>
-                        Select current role
-                    </option>
-                    <option value="Student">Student</option>
-                    <option value="Full Time Job">Full Time Job</option>
-                    <option value="Full Time Learner">Full Time Learner</option>
-                    <option value="Prefer not to say">Prefer not to say</option>
-                    <option value="Other">Other</option>
-                </select>
-                <p>
-                    <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
-                </p>
-                <label class="block" for=""><input class="input-radio" name="recommend" value="Definitely"
-                        type="radio" />Definitely</label>
-                <label class="block" for=""><input class="input-radio" name="recommend" value="Maybe"
-                        type="radio" />Maybe</label>
-                <label class="block" for=""><input class="input-radio" name="recommend" value="Not sure"
-                        type="radio" />Not sure</label>
+        <div class="container"></div>
+        <section id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>  
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+            <input id="submit" type="submit" value="Get Started" class="btn">
+        </form>
+        </section>
+        
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire"></i>
+                    </div>
+                    <div class="description">
+                        <h2>Premium Materials</h2>
+                        <p style="margin-top: -2%;">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
 
-                <p>
-                    <label style="margin-top: 3%" for="">What is your favorite feature of freeCodeCamp?</label>
-                </p>
-                <select id="dropdown" class="input-form" name="">
-                    <option value="Select current role" disabled selected>
-                        Select current role
-                    </option>
-                    <option value="Student">Student</option>
-                    <option value="Full Time Job">Full Time Job</option>
-                    <option value="Full Time Learner">Full Time Learner</option>
-                    <option value="Prefer not to say">Prefer not to say</option>
-                    <option value="Other">Other</option>
-                </select>
-                <p>What would you like to see improved? (Check all that apply)</p>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Front-end Projects" />Front-end Projects</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Back-end Projects" />Back-end Projects</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Data Visualization" />Data Visualization</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Challenges" />Challenges</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Open Source Community" />Open Source Community</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Gitter help rooms" />Gitter help rooms</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Videos" />Videos</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox" value="City Meetups" />City
-                    Meetups</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox" value="Wiki" />Wiki</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox" value="Forum" />Forum</label>
-                <label class="block" for=""><input type="checkbox" class="input-checkbox"
-                        value="Additional Courses" />Additional Courses</label>
-
-                <p>Any comments or suggestions?</p>
-                <textarea style="font-family: sans-serif; padding: 3%" name="" id="" cols="80" rows="7"
-                    placeholder="Enter your comment here..."></textarea>
-
-                <button id="submit" style="width: 98%; padding: 2%; background-color: #37af65" type="submit">
-                    Submit
-                </button>
-            </form>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-truck"></i>
+                    </div>
+                    <div class="description">
+                        <h2>Fast Shipping</h2>
+                        <p style="margin-top: -2%;">We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                    </div>
+                    <div class="description">
+                        <h2>Quality Assurance</h2>
+                        <p style="margin-top: -2%;">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section id="pricing">
+                <div class="product" id="tenor">
+                  <div class="level">Tenor Trombone</div>
+                  <h2>$600</h2>
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+                <div class="product" id="bass">
+                  <div class="level">Bass Trombone</div>
+                  <h2>$900</h2>
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+                <div class="product" id="valve">
+                  <div class="level">Valve Trombone</div>
+                  <h2>$1200</h2>
+                  <ol>
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+              </section>
         </div>
-    </div>
+    </id>
 </body>
-
 </html>

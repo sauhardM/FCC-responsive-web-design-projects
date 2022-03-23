@@ -6,21 +6,21 @@ body {
 }
 
 #navbar {
-  min-width: 300px;  
-  border: 1px solid red;
+  border-right: 3px solid gray;
+  /* min-width: 300px;   */
   width: 20%;
   position: fixed;
   align-self: flex-start;
   overflow-y: scroll;
-    top: 0;
-    bottom: 0;
+  top: 0;
+  bottom: 0;
 }
 
 #main-doc {
   width: 80%;
   align-self: flex-end;
   margin-left: 18%;
-  margin-top: 3%;
+  margin-top: 0%;
 }
 
 #navbar > header {
@@ -47,7 +47,6 @@ nav > p {
 }
 
 section > header {
-  
   font-family: "Open Sans", Arial, sans-serif;
   margin-left: 5%;
   font-size: xx-large;
@@ -69,26 +68,67 @@ section > ul > li {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-code{
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 2% 2% 2% 10%;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+#nested-ul {
+  margin-left: 10%;
+}
+
+#nested-ul > li {
+  margin-bottom: 2%;
+}
+
+@media (max-width: 1300px) {
+  #main-doc {
+    width: 100%;
+    height: auto;
+
     display: block;
-    text-align: left;
-    white-space: pre-line;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    align-self: flex-start;
+
+    margin-top: 0%;
+    margin-bottom: 40%;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    border-bottom: 3px solid grey;
+  }
+
+  nav > p {
+    padding: 1%;
+    margin-top: 3%;
+  }
+
+  #main-doc {
+    align-self: flex-end;
     position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
-    background-color: #f7f7f7;
-    padding: 10px;
-    margin: 2% 2% 2% 10%;
-    border-radius: 5px;
-    font-family: monospace;
+    margin-top: 240px;
+  }
 }
-
-#nested-ul{
-    margin-left: 10%;
-}
-
-#nested-ul > li{
-    margin-bottom: 2%;
-}
-

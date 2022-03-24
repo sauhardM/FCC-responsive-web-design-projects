@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd8d100e68.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="navbar">
-        <div><a href="#">About</a></div>
-        <div><a href="#">Work</a></div>
-        <div><a href="#">Contact</a></div>
+        <div><a href="#welcome-section">About</a></div>
+        <div><a href="#projects">Work</a></div>
+        <div><a href="#contact-links">Contact</a></div>
     </nav>
 
     <section id="welcome-section">
@@ -29,25 +30,67 @@
         <div class="project-tile">
             <a href="">
                <img class="Image" src="tribute.png" alt="">
+               <div class="tile-description">Tribute Page</div>
             </a>
         </div>  
         <div class="project-tile">
             <a href="">
                <img class="Image" src="Survey.png" alt="">
+               <div class="tile-description">Survey Form</div>
             </a>
         </div>
         <div class="project-tile">
             <a href="">
                 <img class="Image" src="product.png" alt="">
+                <div class="tile-description">Product Landing Page</div>
             </a>
         </div>
+        <div class="project-tile">
+            <a href="">
+               <img class="Image" src="tictac.png" alt="">
+               <div class="tile-description">Tic Tac Toe Game</div>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="">
+               <img class="Image" src="documentation.png" alt="">
+               <div class="tile-description">Documentation Page</div>
+            </a>
+        </div>  
+        <div class="project-tile">
+            <a href="">
+               <img class="Image" src="calculator.png" alt="">
+               <div class="tile-description">JS Calculator</div>
+            </a>
+        </div>    
       </div> 
+
+      <div id="myProfile-link">
+          <button>
+              <a id="profile-link" href="https://github.com/sauhardM" target="_blank">Show all ></a>
+          </button>
+      </div>
         
     </section>
 
-    <section id="profile-link">
+    <section id="contact-links">
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
         <!-- Links of my public/personal accounts -->
-        <a href=""></a>
+        <div id="links">
+            <a class="sink-on-hover" href="#"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+            <a class="sink-on-hover" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="sink-on-hover" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a class="sink-on-hover" href="#"><i class="fa-solid fa-at"></i> Send a mail</a>
+            <a class="sink-on-hover" href="#"><i class="fa-solid fa-mobile-screen-button"></i> Call me</a>
+        </div>
+
+        <hr>
+
+        <div id="footer">
+
+        </div>
+        
     </section>
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #navbar {
@@ -61,3 +62,43 @@ body {
   font-weight: 300;
   font-style: italic;
 }
+
+#projects{
+  width: 100%;
+  background-color: #45567D;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+}
+
+#tiles{
+  display: flex;
+  flex-direction: row;
+  border: 3px solid red;
+  width: 95%;
+  /* height: 100px; */
+  margin-top: 3%;
+  margin-left: 2%;
+  gap:20px;
+  justify-content: space-evenly;
+}
+
+.project-tile{
+  width: 25%;
+  height:400px;
+  border: 1px solid red;
+  
+
+}
+
+.Image{
+    width: 359px;
+    height: 330px;
+}
+
+
